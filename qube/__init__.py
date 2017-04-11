@@ -32,11 +32,11 @@ Mood = namedtuple('Mood', [
     'updated_at'
 ])
 
-STATE_ON = 17
-STATE_OFF = 0
 
 class Qube(object):
     BASE_URL = 'https://home.qube-smarthome.com/api/v1'
+    STATE_ON = 17
+    STATE_OFF = 0
 
     def __init__(self, email, password):
         self.session = requests.Session()
